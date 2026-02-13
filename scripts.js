@@ -43,3 +43,30 @@ deletee.addEventListener("click",(events)=>{
       document.querySelector(".tasllist").innerHTML="";  // ui all data remove null
      
 });
+
+complet.addEventListener("click",(events)=>{
+   events.preventDefault();
+   datacollect.forEach(function mydata(p){
+    console.log(p);
+     let list=document.createElement("li");
+     let check=document.createElement("input");
+     check.type="checkbox";
+    //  list.textContent=p;
+    //  check.textContent=p;
+     list.appendChild(check);
+     list.append(" "+p);
+     document.querySelector(".tasllist").appendChild(list);
+    //  document.querySelector(".tasllist").appendChild(check);
+
+})
+})
+del.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelectorAll(".tasllist li input:checked")
+        .forEach(function (checkbox) {
+            checkbox.parentElement.remove();
+        });
+});
+
+
