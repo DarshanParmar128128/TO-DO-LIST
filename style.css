@@ -1,3 +1,112 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
 body{
-    background-color: beige;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/* Heading */
+#hed{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+form{
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input + Button */
+.input-group{
+    display: flex;
+    gap: 10px;
+}
+
+/* Input */
+#insert{
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Focus */
+#insert:focus{
+    border-color: #007bff;
+}
+
+/* Button */
+#addtast{
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addtast:hover{
+    background-color: #0056b3;
+}
+
+/* Validation Text (Now Proper Bottom) */
+#valid{
+    display: block;      /* important */
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+    min-height: 18px;    /* space reserve karega */
+}
+
+/* Buttons Section */
+.property{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.property button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.property button:hover{
+    background-color: #bbb;
+}
+
+/* Clear Button */
+.cleare{
+    margin-top: 15px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+.cleare:hover{
+    background-color: darkred;
 }

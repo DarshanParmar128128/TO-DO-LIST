@@ -3,13 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-DO-LIST</title>
     <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
 </head>
 <body>
-    <div class="main-content">
+    <h1 id="hed"> To DO List</h1>
+      <form>
 
+    <div class="input-group">
+        <input id="insert" placeholder="Enter the list item ">
+        <button id="addtast">ADD task</button>
     </div>
-    <script src="scripts.js"></script>
+
+    <!-- Validation message -->
+    <span id="valid"></span>
+
+</form>
+
+   
+    <div class="property">
+        <button class="all">ALL</button> 
+        <button class="active">Delete</button> 
+        <button class="complet">Complet</button> 
+        </div>
+        <button class="cleare">Cleare complet</button>
+        <br/>
+        <br/>
+        <!-- display -->
+         <ul class="tasllist"></ul>
+       <script src="scripts.js"></script>    
 </body>
 </html>
